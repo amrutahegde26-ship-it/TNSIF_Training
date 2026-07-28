@@ -15,7 +15,6 @@ class Laptop extends Phone{
 		System.out.println("it is lenovo laptop");
 	}
 }
-
 public class MultilevelInheritanceDemo {
 
 	public static void main(String[] args) {
@@ -23,8 +22,5 @@ public class MultilevelInheritanceDemo {
 		laptop.deviceType();
 		laptop.phoneType();
 		laptop.laptopType();
-		
-
 	}
-
 }
