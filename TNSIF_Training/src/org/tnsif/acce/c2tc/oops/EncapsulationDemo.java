@@ -1,4 +1,4 @@
-package org.tnsif.acce.c2tc.manager;
+package org.tnsif.acce.c2tc.oops;
 
 class Human{
 	private String name;
