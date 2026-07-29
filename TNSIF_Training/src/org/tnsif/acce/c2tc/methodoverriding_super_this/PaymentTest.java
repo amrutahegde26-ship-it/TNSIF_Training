@@ -1,4 +1,4 @@
-package org.tnsif.acce.c2tc.methodoverriding_super;
+package org.tnsif.acce.c2tc.methodoverriding_super_this;
 class Payment{
 	void makePayment() {
 		System.out.println("processing payment uing generic method");
