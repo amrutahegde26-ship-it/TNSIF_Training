@@ -3,39 +3,45 @@ package org.tnsif.acce.c2tc.collectionsDemo;
 import java.util.ArrayList;
 import java.util.Collections;
 
-class person6 implements Comparable<person6>{
-	String name;
-	int age;
-	person6(String name,int age){
-		this.name=name;
-		this.age=age;
-	}
-	void display() {
-		System.out.println("name :"+ name + "age :"+ age);
-	}
+class Person6 implements Comparable<Person6>
+{
+      String name;
+      int age;
+      
+      Person6(String name,int age)
+      {
+    	      this.name=name;
+    	      this.age=age;
+      }
+	  void display()
+	  {
+		  System.out.println("Name :"+name +"  Age :"+age);
+	  }
 	
 	
-	public int compareTo(person6 other) {
+	@Override
+	public int compareTo(Person6 other) {
+		
 		return this.name.compareTo(other.name);
 	}
+	
 }
+
 
 public class ComparableDemo {
 
 	public static void main(String[] args) {
-		ArrayList<person6> people=new ArrayList<>();
-		people.add(new person6("amruta", 21));
-		people.add(new person6("amruta2", 21));
-		people.add(new person6("amruta3", 21));
+		ArrayList<Person6> people=new ArrayList<>();
+		people.add(new Person6("John",30));
+		people.add(new Person6("Anil",20));
+		people.add(new Person6("Baskar",17));
+		
 		Collections.sort(people);
-		for(person6 person:people) {
+
+		for(Person6 person:people)
+		{
 			person.display();
 		}
-		
-		
-
 	}
-
-
 
 }
